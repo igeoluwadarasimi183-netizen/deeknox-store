@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DEEKNOX Store | Contact</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="index.html">DEEKNOX <span>Store</span></a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="products.html">Products</a>
+      <a class="active" href="contact.html">Contact</a>
+    </nav>
+  </header>
+  <main class="section narrow">
+    <p class="eyebrow">GET IN TOUCH</p>
+    <h1>Contact us</h1>
+    <p class="muted">Try the sample form below. It demonstrates browser-side form validation only.</p>
+    <form class="contact-form" onsubmit="submitContact(event)">
+      <label for="name">Your name</label>
+      <input id="name" type="text" required minlength="2" placeholder="Enter a name">
+      <label for="email">Email address</label>
+      <input id="email" type="email" required placeholder="example@email.com">
+      <label for="message">Message</label>
+      <textarea id="message" rows="5" required minlength="5" placeholder="Write a sample message"></textarea>
+      <button class="button" type="submit">Submit demo form</button>
+    </form>
+    <p id="contact-result" role="status"></p>
+    <div class="notice">This form does not send or store messages. A real contact form needs a secure backend or form service.</div>
+  </main>
+  <footer>© 2026 DEEKNOX Store · Learning project</footer>
+</body>
+</html>

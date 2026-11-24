@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>DEEKNOX Store | Products</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <a class="logo" href="index.html">DEEKNOX <span>Store</span></a>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a class="active" href="products.html">Products</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+  <main class="section">
+    <div class="page-heading">
+      <div><p class="eyebrow">THE COLLECTION</p><h1>Our products</h1></div>
+      <div class="cart-count">Cart: <strong id="cart-count">0</strong></div>
+    </div>
+    <label class="search-label" for="search">Search products</label>
+    <input id="search" class="search" type="search" placeholder="Try Samsung or laptop..." oninput="searchProducts()">
+    <div id="product-list" class="product-grid"></div>
+    <section class="cart-panel">
+      <h2>Your demo cart</h2>
+      <div id="cart-items"><p class="muted">Your cart is empty.</p></div>
+      <p class="total">Total: <strong id="cart-total">₦0</strong></p>
+      <button class="button" onclick="demoCheckout()">Try demo checkout</button>
+      <p class="small muted">Demo only. No payment will be taken and no order will be sent.</p>
+    </section>
+  </main>
+  <footer>© 2026 DEEKNOX Store · Learning project</footer>
+</body>
+</html>
